@@ -1,0 +1,271 @@
+
+    *{
+        margin: 0;padding: 0;
+        box-sizing: border-box;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      ul {list-style-type: none;}
+      a { text-decoration: none;}
+      html, body{ 
+          height: 100%;
+    }
+      /* body { overflow: hidden; } */
+      section{
+        /* position: relative; */
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 { 
+        font-size: 80px;
+        color: #fff;
+      }
+      
+      /* 메인메뉴 */
+      #gnb {
+        position: fixed;
+        width: 100%;
+        font-size: 18px;
+        text-align: right;
+        padding-right: 90px;
+        background: #fff;
+        z-index: 99;
+        box-shadow: 1px 1px 20px #eee;
+      }
+
+      #gnb h1 > img {
+          /* outline: 1px solid red; */
+          position: absolute;
+          left: 95px;
+          margin-top: 8px;
+      }
+      #gnb li{
+        display: inline-block;
+        margin: 20px;
+        margin-right: 70px;
+      }
+    
+      #gnb li a {
+          font-weight: bold;
+          color: #ccc;
+      }
+      #gnb li a:hover {
+        color: #4e8bc8;
+    }
+      #pager ul li a{
+        color: #ccc;
+      }
+      /* 섹션 1 home */
+
+      #s1{
+        background: #fff;
+      }
+      #s1 h1 {
+        color: #000;
+        font-weight: bold;
+        font-family: 'Shadows Into Light', cursive;
+        z-index: 9;
+      }
+
+      #s1 > img.sky {
+        position: absolute;
+        left: 50%;
+        top: 51%;
+    }
+      #s1 > img.name {
+          position: absolute;
+          left: 100px;
+          top: 70%;
+    }
+     #s1 > img.web {
+         position: absolute;
+         left: 100px;
+         top: 15%;
+     }
+
+     #s1 > img.year {
+         position: absolute;
+         right: 160px;
+         top: 15%;
+    }
+
+    #s1 > img.circle {
+        position: absolute;
+        right: 160px;
+        top: 90%;
+    }
+    #s1 > img.cloud1 {
+        position: absolute;
+        left: 58%;
+        top: 50%;
+
+        animation-name: cloud1;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+    }
+    #s1 > img.cloud2 {
+        position: absolute;
+        left: 20%;
+        top: 20%;
+
+        animation-name: cloud2;
+        animation-duration: 80s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes cloud1 {
+        from {
+            left: 50%;
+            transform: rotate(2.9);
+        }
+        
+        50% {
+            left: 60%;
+        }
+        to {
+            left: 50%;
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes cloud2 {
+        from {
+            left: 30%;
+            transform: rotate(2.9);
+        }
+        
+        50% {
+            left: 10%;
+        }
+        to {
+            left: 30%;
+            transform: rotate(0deg);
+        }
+    }
+     /* end 섹션 1 */
+
+
+    /* 섹션 2 (about) */
+
+      #s2{
+        background: #fff;
+      }
+
+      #s2 h1 {
+        position: absolute;
+        top: 112%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: #000;
+        font-family: 'Shadows Into Light', cursive;
+      }
+
+      #s2 img.face{
+          position: absolute;
+          width: 10%;
+         /* outline: 1px solid red; */
+          left: 29%;
+          top: 133%;
+      }
+      #s2 p {
+        position: absolute;
+        /* outline: 1px solid red; */
+        left: 46%;
+        top: 133%;
+        font-size: 18px;
+        line-height: 30px;
+      }
+      #s2 .head{
+        position: absolute;
+        display:flex; 
+        left: 29%;
+        top: 164%;
+      }
+
+      #s2 .head li {
+        margin-right: 170px;
+        font-size: 14px;
+        z-index: 99;
+      }
+
+      #s2 .head li span{
+        font-weight: bold;
+        font-size: 19px;
+        color: #2a4f74;
+      }
+      #s2 ul > img.small_circle_1 {
+        position: absolute;
+        width: 5%; 
+        left: 47%;
+       /* outline: 1px solid red; */
+      }
+
+      #s2 ul > img.small_circle_2 {
+        position: absolute;
+        width: 5%;
+        left: 77%;
+       /* outline: 1px solid blue; */
+      }
+
+      #s2 > img.circle {
+        position: absolute;
+        right: 160px;
+        top: 190%;
+    }
+
+     #s2 > ul.other {
+       /* outline: 1px solid red; */
+       position: absolute;
+       left: 29%;
+       top: 170%;
+       line-height: 25px;
+       font-size: 14px;
+     }
+     #s2 > ul.other span{
+       font-weight: bold;
+       font-size: 16px;
+     }
+
+     #s2 > ul.other2 {
+     /* outline: 1px solid red; */
+      position: absolute;
+      left: 46%;
+      top: 170%;
+      line-height: 25px;
+      font-size: 14px;
+    }
+    
+    #s2 > ul.other3 {
+      /* outline: 1px solid red; */
+      position: absolute;
+      left: 57.4%;
+      top: 170%;
+      line-height: 25px;
+      font-size: 14px;
+    }
+
+    /* 섹션 2 end */
+
+
+
+      #s3{
+        background: #D6A2E8;
+      }
+      #s4 {
+          background: rgba(153, 156, 216, 0.633);
+      }
+      
+      /* 우측 페이지 인디케이터 */
+      #pager {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        z-index: 99;
+      }
+      #pager li.on a {
+        color: red;
+      }
+  
+
