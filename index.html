@@ -12,14 +12,16 @@
     <!-- 구글 웹폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- 사용자 자바스크립트 -->
     <script src="./js/main.js"></script>
-    <!-- <script src="./js/mousewheel.js"></script> -->
     <script src="./js/jquery.mousewheel.min.js"></script>
+   
+   
   </head>
 <body>
   <header>
     <nav id="gnb">
-      <h1><img src="./img/logo.png" alt=""><a href="./home.png"></a></h1>
+      <h1><link rel="stylesheet" href="./"><img src="./img/logo.png" alt=""></a></h1>
       <ul>
         <li><a href="#s1">HOME</a></li>
         <li><a href="#s2">ABOUT</a></li>
@@ -41,7 +43,6 @@
 
   <section id="s1">
     <h1>PORT  -  FOLIO</h1>
-    <img class="sky" src="./img/sky 1.png" alt="포트폴리오 언더라인">
     <img class="name" src="./img/name.png" alt="이름">
     <img class="year" src="./img/year.png" alt="년도">
     <img class="web" src="./img/web.png" alt="웹디자인">
@@ -55,10 +56,9 @@
   <section id="s2">
     <h1>ABOUT ME</h1>
     <img class="face" src="./img/profile.png" alt="프로필">
-    <img class="circle"src="./img/circle.png" alt="원3개">
     <p>안녕하세요! 저는 신입 웹 디자이너를 꿈꾸고 있는 조혜영입니다.<br>
     먼저 제 포트폴리오 사이트를 방문해 주셔서 감사합니다!<br>
-    저는 비록 비전공자이지만 늘 디자인에 대해 관심이 많았고 배우고 싶었습니다.<br>
+    저는 비록 비전공자 이지만 늘 디자인에 대해 관심이 많았고 배우고 싶었습니다.<br>
     그리하여 좋은 기회가 와닿아 국가 수료로 지난 5개월간 더조은컴퓨터아카데미에서<br>
     웹 디자인/퍼블리싱 과정을 배우며 모바일과 웹 사이트를 구축하고<br>
     디자인하고 퍼블리싱 하는데에 큰 재미와 매력을 느끼게 되었습니다.<br>
@@ -66,13 +66,18 @@
     시대에 흐름을 읽을 줄 아는, 혹은 '얘 이런 것도 할 줄 알았어?' 라는 말이<br>
     저절로 나오는 무궁무진하며 잠재력을 지닌 웹 디자이너가 되고 싶습니다.</p>
     
-    <ul class="head">
+    <ul class="name">
       <li><span>조 혜영</span>　HYEYOUNG CHO</li>
-      <li><span>SKILLS</span></li>
-      <li><span>LICENSE</span></li>
-      <img class="small_circle_1" src="./img/small_circle.png" alt="">
-      <img class="small_circle_2" src="./img/small_circle.png" alt="">
     </ul>
+    <ul class="skills">
+      <li>SKILLS</li>
+    </ul>
+    <ul class="license">
+      <li>LICENSE</li>
+    </ul>
+    <img class="circle_1" src="./img/small_circle.png" alt="">
+    <img class="circle_2" src="./img/small_circle.png" alt="">
+      
 
     <ul class="other">
       <li><span>Age</span> 　1997.06.05</li>
@@ -86,20 +91,65 @@
        <li>HTML</li>
        <li>CSS</li>
        <li>JavaScript</li>
-       <li>jQuery</li>
     </ul>
     <ul class="other3">
        <li>GTQ 포토샵 1급</li>
        <li>웹 디자인 기능사 (예정)</li>
     </ul>
   </section>
+  
+ <!-- 포트폴리오 부분 -->
+ <section id="s3">
+   <h1>PORTFOLIO</h1>
+   <div class="web">
+     <img src="./mokup/fendi.png" alt="펜디">
+     <h2>01. FENDI<span> 　-  　WEB SITE CODING</span></h2>
+     <ul>
+       <li class="skills">USER PROGRAM</li>
+       <li>PHOTOSHOP HTML CSS JAVASCRIPT JQUERY</li>
+       <li class="skills">WORKING DIAGRAM</li>
+       <li>100%</li>
+       <li class="skills">PERIOD</li>
+       <li>1WEEKS</li>
+       <a class="link_fendi" href="https://chohyeyoung.github.io/Fendi/">PAGE LINK</a>
+      </ul>
+    </div>
 
-  <section id="s3">
-    <h1>section3</h1>
-  </section>
+   <div class="cafe">
+    <img src="./mokup/paik.png" alt="빽다방">
+    <h2><span>WEB SITE RENEWAL CODING 　-  　</span>02. PAIK'S COFFEE</h2>
+    <ul>
+      <li class="skills">USER PROGRAM</li>
+      <li>PHOTOSHOP HTML CSS JAVASCRIPT JQUERY</li>
+      <li class="skills">WORKING DIAGRAM</li>
+      <li>100%</li>
+      <li class="skills">PERIOD</li>
+      <li>1.5WEEKS</li>
+      <a class="link_cafe" href="https://chohyeyoung.github.io/paik_cafe/">PAGE LINK</a>
+     </ul>
+  </div>
+
+  <div class="animal">
+    <img src="./mokup/animal.png" alt="해마루">
+    <h2>03. HEAMARU HOSPITAL<span> 　-  　WEB SITE RENEWAL CODING</span></h2>
+    <ul>
+      <li class="skills">USER PROGRAM</li>
+      <li>PHOTOSHOP HTML CSS JAVASCRIPT JQUERY</li>
+      <li class="skills">WORKING DIAGRAM</li>
+      <li>100%</li>
+      <li class="skills">PERIOD</li>
+      <li>1.5WEEKS</li>
+      <a class="link_animal" href="https://chohyeyoung.github.io/animal__hospital/">PAGE LINK</a>
+    </ul>
+
+    
+  </div>
+
+ </section>
+
 
   <section id="s4">
-    <h1>section4</h1>
+    <h1>h1</h1>
   </section>
 
 </body>
