@@ -1,6 +1,4 @@
 
-
-
     *{
         margin: 0;padding: 0;
         box-sizing: border-box;
@@ -13,23 +11,34 @@
           /*width: 1920px; */
           height: 100%;
     }
+     
       /* body { overflow: hidden; } */
-      section{
+      section {
         /* position: relative; */
+        width: 1200px;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        outline: 1px solid purple;
+        background: #f0f;
+        margin: 0 auto;
       } 
       h1 { 
         font-size: 80px;
         color: #fff;
       }
-      
+      /* .container {
+        position: relative;
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        outline: 1px solid red;
+      } */
+
       /* 메인메뉴 */
       #gnb {
         position: fixed;
         width: 100%;
+        margin: 0 auto;
+        left: 0; top: 0;
         height: 60px; 
         font-size: 18px;
         text-align: right;
@@ -39,11 +48,12 @@
         box-shadow: 1px 1px 10px #ddd;
       }
 
-      #gnb h1 > img {
+      #gnb a > img {
           /* outline: 1px solid red; */
           position: absolute;
           left: 60px;
           margin-top: 5px;
+         
           
       }
       #gnb ul li {
@@ -71,12 +81,17 @@
       /* 섹션 1 home */
 
       #s1{
-        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* 영역 안에서 정렬하는 모던코드 */
+        padding: 60px;
+        height: 100%;
       }
       #s1 h1 {
-        position: absolute;
+        /* position: absolute;
         top: 250px;
-        left: 40%;
+        left: 40%; */
+        text-align: center;
         color: #000;
         font-size: 70px;
         font-weight: bold;
@@ -87,7 +102,7 @@
       #s1 > img.name {
           position: absolute;
           left: 70px;
-          top: 400px;
+          top: 800px;
     }
      #s1 > img.web {
          position: absolute;
@@ -105,7 +120,7 @@
     #s1 > img.circle {
         position: absolute;
         right: 80px;
-        top: 540px;
+        top: 1000px;
     }
     #s1 > img.cloud1 {
         position: absolute;
@@ -163,42 +178,42 @@
     /* 섹션 2 (about) */
 
       #s2{
+        padding-top: 60px;
         background: #fff;
       }
 
       #s2 h1 {
-        position: absolute;
-        top: 650px;
-        left: 50%;
-        margin: 0 auto;
+        /* background: #f0f; */
+        padding: 30px;
         font-size: 30px;
         font-weight: bold;
         text-align: center;
         color: #000;
         font-family: 'Shadows Into Light', cursive;
       }
-
-      #s2 img.face{
-          position: absolute;
-          width: 200px;
-          height: 200px;
-         /* outline: 1px solid red; */
-          left: 28%;
-          top: 750px;
+      #s2 .about_box {
+        position: relative;
+        overflow: hidden;
+        
       }
-      #s2 p {
-        position: absolute;
-        /* outline: 1px solid red; */
-        left: 50%;
-        top: 750px;
+      #s2 .about_box .face_box{
+         
+        float: left;
+        width: 50%;
+        text-align: right;
+        padding: 50px;
+      }
+      #s2 .about_box p {
+        width: 50%;
+        float: right;
         font-size: 14px;
         line-height: 24px;
+        padding: 50px;
       }
 
      #s2 .name li {
-       position: absolute;
-       left: 29%;
-       top: 990px;
+       float: left;
+       background: #ccc;
        font-size: 12px;
      }
 
@@ -209,9 +224,6 @@
      }
 
      #s2 .skills li {
-       position: absolute;
-       left: 50.7%;
-       top: 990px;
        font-size: 14px;
        font-weight: bold;
        color: #3c6996;
@@ -220,9 +232,9 @@
      }
 
      #s2 .license li {
-       position: absolute;
+       /* position: absolute;
        top: 990px;
-       left: 64.6%;
+       left: 64.6%; */
        font-size: 14px;
        font-weight: bold;
        color: #3c6996;
@@ -230,23 +242,23 @@
      }
 
      #s2 img.circle_1 {
-      position: absolute;
+      /* position: absolute;
       top: 990px;
-      left: 52.5%;
+      left: 52.5%; */
     }
 
     #s2 img.circle_2 {
-      position: absolute;
+      /* position: absolute;
       top: 990px;
-      left: 67.5%;
+      left: 67.5%; */
     }
 
 
      #s2 > ul.other {
        /* outline: 1px solid red; */
-       position: absolute;
+       /* position: absolute;
        left: 29%;
-       top: 1035px;
+       top: 1035px; */
        line-height: 20px;
        font-size: 12px;
      }
@@ -257,18 +269,18 @@
 
      #s2 > ul.other2 {
      /* outline: 1px solid red; */
-      position: absolute;
+      /* position: absolute;
       left: 50.7%;
-      top: 1035px;
+      top: 1035px; */
       line-height: 20px;
       font-size: 12px;
     }
     
     #s2 > ul.other3 {
       /* outline: 1px solid red; */
-      position: absolute;
+      /* position: absolute;
       left: 64.6%;
-      top: 1035px;
+      top: 1035px; */
       line-height: 20px;
       font-size: 12px;
     }
@@ -276,11 +288,13 @@
 
 
     /* 섹션 3  */
-       #s3 h1 {
-         position: absolute;
-         top: 1245px;
-        left: 50%;
-        margin: 0 auto;
+    
+    #s3 {
+      padding: 60px;
+    }
+     
+    #s3 h1 {
+        padding: 30px;
         font-size: 30px;
         font-weight: bold;
         text-align: center;
@@ -290,15 +304,13 @@
 
        #s3 .web img{
          
-         position: absolute;
-         left: 15%; top:1350px;
+         
          width: 450px;
          
        }
        #s3 .web h2 {
          
-         position: absolute;
-         left: 55%; top: 1380px;
+         
          font-size: 20px;
        }
 
@@ -308,8 +320,7 @@
        }
        #s3 .web ul {
          
-         position: absolute;
-         left: 55%; top: 1440px;
+         
          font-size: 14px;
          font-weight: bold;
        }
@@ -321,15 +332,13 @@
 
        #s3 .cafe img{
          
-        position: absolute;
-        left: 47%; top:1700px;
+        
         width: 450px;
         
       }
       #s3 .cafe h2 {
         
-        position: absolute;
-        left: 14.5%; top: 1730px;
+       
         font-size: 20px;
         text-align: right;
       }
@@ -340,8 +349,7 @@
       }
       #s3 .cafe ul {
         
-        position: absolute;
-        left: 20%; top: 1790px;
+        
         font-size: 14px;
         font-weight: bold;
         text-align: right;
@@ -353,15 +361,13 @@
 
       #s3 .animal img{
          
-        position: absolute;
-        left: 15%; top:2050px;
+       
         width: 450px;
         
       }
       #s3 .animal h2 {
         
-        position: absolute;
-        left: 55%; top: 2080px;
+        
         font-size: 20px;
        
       }
@@ -372,8 +378,7 @@
       }
       #s3 .animal ul {
         
-        position: absolute;
-        left: 55%; top: 2150px;
+       
         font-size: 14px;
         font-weight: bold;
         
@@ -384,8 +389,7 @@
       }
 
       #s3 a.link_fendi{
-        position: absolute;
-        left: 0%; top: 150px;
+        
         font-size: 12px;
         color: #666;
         padding: 10px 20px;
@@ -393,8 +397,7 @@
       }
 
       #s3 a.link_cafe {
-        position: absolute;
-        left: 65%; top: 150px;
+       
         font-size: 12px;
         color: #666;
         padding: 10px 20px;
@@ -403,8 +406,7 @@
 
 
       #s3 a.link_animal {
-        position: absolute;
-        left: 0%; top: 150px;
+        
         font-size: 12px;
         color: #666;
         padding: 10px 20px;
@@ -419,8 +421,19 @@
 
 
       #s4 {
-
-      }
+        
+          padding: 60px;
+        }
+         
+      #s4 h1 {
+            padding: 30px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+            font-family: 'Shadows Into Light', cursive;
+           }
+    
       
       /* 우측 페이지 인디케이터 */
       #pager {
@@ -433,3 +446,4 @@
         color: #7e7e7e;
       }
   
+
